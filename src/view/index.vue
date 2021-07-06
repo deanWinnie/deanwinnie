@@ -2,7 +2,7 @@
     <div class="index-wrapper wrapper clearfix">
       <div class="index-left clearfix">
         <div class="swiper-left clearfix">
-          <div class="swiper-left-l">
+          <div class="swiper-left-l clearfix">
             <h2 class="subtitle">
               <span>地点</span>
               <br>
@@ -31,7 +31,7 @@
               </li>
             </ul>
           </div>
-          <div class="swiper-left-r">
+          <div class="swiper-left-r clearfix">
             <swiper :options="swiperOptions">
             <swiper-slide v-for="(item, index) in slideList" :key="index">
                 <a :href="'/' + item.id"><img :src="item.img" /></a>
@@ -171,16 +171,20 @@ export default {
         }
       }
       .swiper-left-r{
-        height: 500px;
+        // height: 460px;
         width: 740px;
+        float: left;
+        margin-left: 20px;
+        border-bottom: 2px solid #676869;
+        padding-bottom: 6px;
       }
     }
   }
 }
 .swiper-container{
   img{
-    width: 100%;
-    height: 500px;
+    width: 740px;
+    height: 474px;
   }
 }
 </style>
