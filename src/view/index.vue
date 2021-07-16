@@ -44,6 +44,52 @@
           </swiper>
           </div>
         </div>
+        <div class="left-view">
+          <div class="left-view-ul">
+            <h2 class="subtitle clearfix">
+              <span>景观</span>
+              <br>
+              <span class="small">VIEW</span>
+            </h2>
+            <ul class="menu">
+              <li>喧嚣都市</li>
+              <li>巍巍大山</li>
+              <li>微澜海风</li>
+              <li>炙热沙漠</li>
+            </ul>
+          </div>
+          <div class="left-view-pic">
+            
+          </div>
+        </div>
+      </div>
+      <!-- 右边栏 -->
+      <div class="index-right clearfix">
+        <div class="right-road">
+          <h2 class="subtitle">在路上</h2>
+          <ul class="right-ul">
+            <li>
+              <span class="right-ul-num">1</span>
+              <h3 class="right-ul-tit">延吉</h3>
+            </li>
+            <li>
+              <span class="right-ul-num">2</span>
+              <h3 class="right-ul-tit">长白山</h3>
+            </li>
+            <li>
+              <span class="right-ul-num">3</span>
+              <h3 class="right-ul-tit">敦化</h3>
+            </li>
+            <li>
+              <span class="right-ul-num">4</span>
+              <h3 class="right-ul-tit">武汉</h3>
+            </li>
+            <li>
+              <span class="right-ul-num">5</span>
+              <h3 class="right-ul-tit">长沙</h3>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
 </template>
@@ -121,18 +167,15 @@ export default {
 }
 
 .index-wrapper{
+  margin-top:20px;
+  margin-bottom: 30px;
   .index-left{
      width: 960px;
      float: left;
      background-color: #FFF;
      box-shadow: 0 0 3px #999;
      padding-top:20px;
-    .swiper-left{
-      .swiper-left-l{
-        width: 180px;
-        border-bottom: 2px solid #676869;
-        float: left;
-        .subtitle{
+     .subtitle{
           color: #FFF;
           font-family: "微软雅黑";
           font-size: 18px;
@@ -142,8 +185,13 @@ export default {
           line-height: 20px;
           height: 40px;
           width: 140px;
-          float: right;
+          // float: left;
         }
+    .swiper-left{
+      .swiper-left-l{
+        width: 180px;
+        border-bottom: 2px solid #676869;
+        float: left;
         ul{
           font-family: "宋体";
           text-align: right;
@@ -179,6 +227,75 @@ export default {
         padding-bottom: 6px;
       }
     }
+    .left-view{
+      margin-top: 30px;
+      .left-view-ul{
+        .menu{
+          color: #444;
+          margin-top: 15px;
+          li:hover{
+            background-color: #ddd;
+          }
+          li{
+            margin-bottom: 2px;
+            background: #eee;
+            text-align: right;
+            padding: 8px 20px 8px 0;
+            font-family: "微软雅黑";
+            font-size: 15px;
+            cursor: pointer;
+            height: 22px;
+            width: 160px;
+          }
+        }
+      }
+    }
+  }
+  .index-right{
+    width: 300px;
+    float: left;
+    background-color:#333;
+    .right-road{
+      height: 506px;
+      .subtitle{
+      height: 32px;
+      background: #222;
+      border-top: 1px solid #464646;
+      padding-top: 8px;
+      color: #fff;
+      padding-left: 10px;
+      font-size: 16px;
+      font-family: "微软雅黑";
+      width: 290px;
+      font-weight: lighter!important;
+    }
+    .right-ul{
+      li{
+        height: 50px;
+        border-bottom: 1px solid #242424;
+        border-top: 1px solid #464646;
+        color: #eee;
+      }
+      li:hover{
+        background-color: #111;
+      }
+      .right-ul-num{
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        display: inline-block;
+        background-color: #222;
+        color: #fff;
+        margin: 10px 30px 10px 10px;
+      }
+      .right-ul-tit{
+        display: inline-block;
+      }
+    }
+
+    }
+    
   }
 }
 .swiper-container{
