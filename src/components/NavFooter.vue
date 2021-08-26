@@ -7,8 +7,8 @@
                 <span></span> 
             </div>
             <div class="footer-records">
-                <p>Copyright © 2001-2017 Chinese National Geography Press. All rights reserved.</p>
-                <p>优秀科普网站 京ICP证090072号 京ICP备10014304号-4 京ICP备10014304号-5 京公网安备11010502026082 新出网证（京）字 049号 出版物经营许可证</p>
+                <p>Copyright 2021 mywen.net ALL Rights Reserved</p>
+                <p><a href="https://beian.miit.gov.cn">浙ICP备2021025976号</a></p>
             </div>
         </div>
     </div>
@@ -44,6 +44,10 @@ export default {
             text-align: center;
             font-size:12px;
             color:#999;
+        }
+        a{
+            color:#999;
+            text-decoration: none;
         }
     }
 }
